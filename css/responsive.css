@@ -5,131 +5,26 @@
 }
 
 
-@media (max-width: 1299px) {
- 
-
-    /* @dev2 css here*/
-    .footer-logo-column {
-        width: 215px;
-    }
-    .percent-item__inner p {
-        font-size: 30px;
-    }
-    .percent-item__inner h1 {
-        font-size: 78px;
-    }
-    .percent-item__bottom img {
-        max-width: 158px;
-    }
-    .percent-item__bottom {
-        max-width: 318px;
-    }
-    .footer-section {
-        padding-top: 70px;
-        padding-bottom: 60px;
-    }
-    /* @dev2 css here -end*/
-
-
-}
-
-
 @media (max-width: 1199px) {
  
-
-
-    /* @dev2 css here*/
-    .percent-item {
-        padding: 64px 70px 41px 52px;
-    }
-    .percent-item__inner p {
-        font-size: 28px;
-    }
-    .footer-logo-column {
-        width: 188px;
-    }
-    /* @dev2 css here -end*/
-
 }
 
 
 @media (max-width: 991px) {
  
-
-    /* @dev2 css here*/
-    .percent-item {
-        padding: 40px 40px 26px 40px;
-        flex: 0 0 auto;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    .sec-cont-blk h2.h2 {
-        font-size: 32px;
-        line-height: 1.4;
-        margin-bottom: 38px;
-    }
-    .brn-ss-section-inner .sec-cont-blk {
-        padding: 0px 20px;
-    }
-    .brands-wrapper a img {
-        max-width: 111px;
-        max-height: 92px;
-    }
-    .footer-logo-column {
-        display: none;
-    }
-    .footer-top-inner {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .footer-menu-column:nth-child(2) {
-        width: 215px;
-    }
-    .footer-bottom-inner p br{
-        display: none;
-    }
-    .brn-ss-section-inner {
-        background-color: #58606c;
-        padding: 80px 0px 70px;
-    }
-    /* @dev2 css here end*/
-
-
 }
 
 
 @media (max-width: 768px) {
  
-
-    /* @dev2 css here*/
-    .percent-item__inner h1 {
-        font-size: 65px;
-    }
-    /* @dev2 css here end*/
-
 }
 
 
 @media (max-width: 575px) {
  
-
-
-    /* @dev2 css here*/
-    
-    /* @dev2 css here end*/
-
-
 }
 
 
 @media (max-width: 390px) {
  
-
-
-    /* @dev2 css here*/
-    
-    /* @dev2 css here end*/
-
-
 }

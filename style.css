@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .h2 {
   font-size: 40px;
-  margin: 0 0 22px;
+  margin: 0 0 26px;
   font-weight: 500;
 }
 ul{
@@ -223,9 +223,10 @@ p:last-child{
 .main-menu > ul > li > a {
   font-size: 17.7px;
   font-weight: 500;
+  transition: 0.3s;
 }
 .main-menu > ul > li > a:hover {
-
+  color: var(--theme__color1);
 }
 
 .header-right {
@@ -299,13 +300,6 @@ p:last-child{
   color: var(--theme__color1);
   padding: 10px;
 }
-.dropdown-menu-custom ul {
-  background: #fff;
-  padding: 20px 0;
-}
-.dropdown-menu-custom ul li a {
-  color: #97A3AE;
-}
 .offcanvas-overlay {
   position: fixed;
   top: 0;
@@ -371,11 +365,13 @@ p:last-child{
 
 /* ---hero-section--- */
 .hero-section {
+  margin-bottom: 28px;
   background: linear-gradient(to right, #B5B6C4, #474A53);
   color: #fff;
 }
 .hero-section-inner {
-  height: 624px;
+  min-height: 624px;
+  padding: 170px 0 100px;
   display: flex;
   align-items: center;
   position: relative;
@@ -412,8 +408,135 @@ p:last-child{
 /* ---hero-section---end */
 
 
+/* ----common-element---- */
+.sec-cont-blk {
+  display: flex;
+  flex-direction: column;
+}
+.sec-cont-blk.center-this {
+  align-items: center;
+  justify-content: center;
+}
+.sec-cont-blk .bottom-button {
+  margin: 25px 0 0;
+}
+/* ----common-element----end */
 
 
+/* ---section-a--- */
+.section-a {
+  margin-bottom: 28px;
+}
+.section-a-inner {
+
+}
+.section-a-content {
+  min-height: 504px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.section-a-content::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  z-index: -1;
+  background-position: center !important;
+  background-size: center !important;
+}
+.section-a-content .sec-cont-blk {
+  padding: 50px 128px;
+  width: 65%;
+}
+.section-a-content .sec-cont-blk .in-text {
+  padding: 0 150px 0 0;
+}
+.section-a-content .sec-cont-blk .in-text p {
+  line-height: 1.7;
+}
+.section-a-content .sec-cont-blk-last {
+  width: 50%;
+  padding-right: 100px;
+  margin-left: auto;
+}
+.section-a-content .sec-cont-blk-last .in-text {
+  padding-right: 0;
+}
+
+
+.section-a-selfie-healthy .section-a-content::after {
+  background: url('images/selfie-healthy.png');
+}
+.section-a-healthcare-accessible .section-a-content::after {
+  background: url('images/healthcare-accessible.png');
+}
+.section-a-instant-affordable .section-a-content::after {
+  background: url('images/instant-affordable.png');
+}
+.section-a-partner .section-a-content::after {
+  background: url('images/partner.png');
+}
+/* ---section-a---end */
+
+
+/* ---section-b--- */
+.section-b {
+  --bg-theme: #72C7CE; 
+  margin: 0 0 28px;
+}
+.section-b-inner {
+
+}
+
+.section-b-row {
+  --inner-space: 28px;
+  --bt-space: var(--inner-space);
+  --item: 2;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--inner-space) * -0.5) calc(var(--bt-space) * -1 );
+  justify-content: center;
+}
+.sec-b-column {
+  width: calc((100% / var(--item)) - var(--inner-space));
+  margin: 0  calc(var(--inner-space) * 0.5) var(--bt-space);
+}
+.sec-b-column.image-side {
+
+}
+.sec-b-column.text-side {
+  background: var(--bg-theme);
+  color: #fff;
+  padding: 50px 128px;
+  display: flex;
+  align-items: center;
+}
+
+.sec-b-column.image-side .image {
+
+}
+.section-b-column.image-side .image img {
+
+}
+
+.section-b-column.text-side .sec-cont-blk {
+
+}
+
+
+.section-b-skin-cancer {
+  --bg-theme: #EBAA8E; 
+}
+.section-b-tb {
+  --bg-theme: #26474E; 
+}
+/* ---section-b---end */
 
 
 
@@ -421,7 +544,9 @@ p:last-child{
 /* percent-area */
 
 
-
+.percent-mb{
+  margin-bottom: 28px;
+}
 .percent-inner{
   background-color: #14a1ae;
   padding: 35px 0px 58px;
@@ -447,12 +572,12 @@ p:last-child{
 }
 
 
-.percent-item__bottom{
-  max-width: 368px;
-  width: 100%;
-  padding: 19px 0px;
-  border-radius: 100px;
-  background-color: #fff;
+.percent-item__bottom {
+	max-width: 368px;
+	width: 100%;
+	padding: 10px 0px;
+	border-radius: 100px;
+	background-color: #fff;
 }
 .percent-item__bottom img{
   max-width: 100%;
@@ -584,10 +709,5 @@ p:last-child{
   margin-bottom: 0px;
 }
 .footer-bottom-inner p{}
-
-
-
-
-
 
 /* footer-area-end */
