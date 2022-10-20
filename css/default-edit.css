@@ -1,8 +1,9 @@
 /* buttons */
 .default-button {
-    padding: 20px 30px;
+    padding: 19px 30px;
     min-width: 240px;
     font-size: 16px;
+    border: 1px solid transparent;
     border-radius: 5px;
     font-weight: 500;
     font-family: var(--proximaNova-700);
@@ -13,11 +14,26 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.3s;
+}
+.default-button:hover {
+    background: var(--theme__color1);
+    color: #fff;
 }
 .default-button .icon-l {
     margin: 0 0 0 14px;
 }
 
+
+.default-button.default-button--wb {
+    border-color: #fff;
+    color:  #fff;
+    background: transparent;
+}   
+.default-button.default-button--wb:hover {
+    background: #fff;
+    color: var(--theme__color1);
+}
 /* buttons-end */
 
 /* small-tools */
