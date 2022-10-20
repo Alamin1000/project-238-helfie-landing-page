@@ -1,3 +1,25 @@
+/* buttons */
+.default-button {
+    padding: 20px 30px;
+    min-width: 240px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: var(--proximaNova-700);
+    line-height: 1.3;
+    background: #000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.default-button .icon-l {
+    margin: 0 0 0 14px;
+}
+
+/* buttons-end */
+
 /* small-tools */
 .underline {
     text-decoration: underline !important;

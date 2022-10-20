@@ -3,13 +3,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @font-face {
+  font-family: 'Proxima Nova Alt Th';
+  src: url('webfonts/ProximaNovaA-Thin.woff2') format('woff2'),
+      url('webfonts/ProximaNovaA-Thin.woff') format('woff'),
+      url('webfonts/ProximaNovaA-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Alt Lt';
+  src: url('webfonts/ProximaNovaA-Light.woff2') format('woff2'),
+      url('webfonts/ProximaNovaA-Light.woff') format('woff'),
+      url('webfonts/ProximaNovaA-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url('webfonts/ProximaNova-Extrabld.woff2') format('woff2'),
+      url('webfonts/ProximaNova-Extrabld.woff') format('woff'),
+      url('webfonts/ProximaNova-Extrabld.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  src: url('webfonts/ProximaNova-Black.woff2') format('woff2'),
+      url('webfonts/ProximaNova-Black.woff') format('woff'),
+      url('webfonts/ProximaNova-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Alt Rg';
+  src: url('webfonts/ProximaNovaA-Bold.woff2') format('woff2'),
+      url('webfonts/ProximaNovaA-Bold.woff') format('woff'),
+      url('webfonts/ProximaNovaA-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Proxima Nova Rg';
-  src: url('webfonts/ProximaNova-Regular.woff') format('woff'),
+  src: url('webfonts/ProximaNova-Regular.woff2') format('woff2'),
+      url('webfonts/ProximaNova-Regular.woff') format('woff'),
       url('webfonts/ProximaNova-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url('webfonts/ProximaNovaT-Thin.woff2') format('woff2'),
+      url('webfonts/ProximaNovaT-Thin.woff') format('woff'),
+      url('webfonts/ProximaNovaT-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('webfonts/ProximaNova-Bold.woff2') format('woff2'),
+      url('webfonts/ProximaNova-Bold.woff') format('woff'),
+      url('webfonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 :root {
   --theme__color1: #14A1AE;
@@ -17,6 +90,7 @@
   --background: #fff;
   --inter: 'Inter', sans-serif;
   --proximaNova: 'Proxima Nova Rg';
+  --proximaNova-700: 'Proxima Nova Alt Rg';
 }
 *,::before,::after {
   box-sizing: border-box;
@@ -79,6 +153,11 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
   font-weight: 700;
 }
+.h2 {
+  font-size: 40px;
+  margin: 0 0 22px;
+  font-weight: 500;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -112,12 +191,52 @@ p:last-child{
   color: #fff;
 }
 .header-in {
-
+  padding: 41px 0;
 }
 .header-section-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 156px;
+  display: inline-flex;
+}
+.header-logo img {
+
+}
+
+.main-menu {
+  margin-left: 270px;
+}
+.main-menu > ul {
+  display: flex;
+  align-items: center;
+}
+.main-menu > ul > li {
+  margin-right: 70px;
+}
+.main-menu > ul > li:last-child {
+  margin-right: 0;
+}
+.main-menu > ul > li > a {
+  font-size: 17.7px;
+  font-weight: 500;
+}
+.main-menu > ul > li > a:hover {
+
+}
+
+.header-right {
+
+}
+.header-right .hr-a {
+  font-size: 17.7px;
+  font-weight: 500;
+}
+.header-right .offcanvas-open {
+  margin-left: 30px;
 }
 /* header-end */
 
@@ -259,6 +378,37 @@ p:last-child{
   height: 624px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-character {
+  position: absolute;
+  bottom: 0;
+  left: -140px;
+  z-index: -1;
+}
+
+.hero-content {
+  margin-left: 38.8%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero-content .h1 {
+  font-size: 40px;
+  margin: 0 0 37px;
+  font-weight: 500;
+}
+.hero-content .hero-bt {
+
+}
+.hero-content .hero-bt p {
+  font-size: 23px;
+  margin: 0 0 37px;
 }
 
 /* ---hero-section---end */
+
+
